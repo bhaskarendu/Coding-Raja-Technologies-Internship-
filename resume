@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <main>
+        <section id="template-selection">
+            <!-- Template selection options -->
+        </section>
+        <section id="resume-form">
+            <!-- Resume input form -->
+        </section>
+        <section id="preview">
+            <!-- Resume preview -->
+        </section>
+    </main>
+    <footer>
+        <button id="download-button">Download Resume</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+// Sample data structure for resume fields
+let resumeData = {
+    personalInfo: {},
+    education: [],
+    workExperience: [],
+    skills: []
+};
+
+// Function to update the resume preview
+function updatePreview() {
+    // Get data from the form fields and update the preview
+    // You'll need to write logic to update the preview based on user input
+}
+
+// Function to handle form submissions
+function handleSubmit(event) {
+    event.preventDefault();
+    // Gather data from form fields and update the resumeData object
+    // You'll need to write code to store user data
+    updatePreview();
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    // Load available resume templates and populate #template-selection
+    // You'll need to write code to populate template options
+    updatePreview();
+});
+
+document.querySelector('#resume-form').addEventListener('submit', handleSubmit);
+document.querySelector('#download-button').addEventListener('click', () => {
+    // Implement logic to generate and download the resume in PDF or Word format
+});
+
+// You'll need to write additional code to handle user registration and responsive design
